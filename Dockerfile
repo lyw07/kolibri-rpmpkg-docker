@@ -1,5 +1,5 @@
 FROM centos:latest
-MAINTAINER lywang07@gmail.com
+MAINTAINER Learning Equality
 
 RUN yum update -y && yum install -y \
 	git \
