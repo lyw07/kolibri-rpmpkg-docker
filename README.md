@@ -1,0 +1,1 @@
+# kolibri-rpmpkg-docker
