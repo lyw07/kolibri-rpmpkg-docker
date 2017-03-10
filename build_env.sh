@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Set up the environment
 yum update -y && yum install -y \
 	git \
 	ruby-devel \
@@ -11,6 +13,7 @@ command_search() {
 	command -v "$1" >/dev/null 2>&1;
 }
 
+# Install fpm
 if command_search fpm ; then
 	echo -e "fpm is already installed.\n"
 
@@ -19,6 +22,7 @@ else
 	gem install --no-ri --no-rdoc fpm
 fi
 
+# Install pip
 if command_search pip ; then
 	echo -e "pip is already installed.\n"
 else
